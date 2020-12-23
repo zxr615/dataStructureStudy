@@ -4,11 +4,21 @@ import (
 	"fmt"
 	"study/single"
 	"study/sqlist"
+	"study/static"
 )
 
 func main() {
 	//sqlistTest()
-	singleTest()
+	//singleTest()
+	staticTest()
+}
+
+func staticTest()  {
+	s := static.NewStatic().InitList(5)
+	s.Add("测试1")
+	s.Add("测试2")
+
+	fmt.Println(s)
 }
 
 func singleTest() {
